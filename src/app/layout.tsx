@@ -28,7 +28,7 @@ export default function RootLayout({
         <main className="w-screen min-h-screen">
           <div className="container mx-auto min-h-screen flex flex-col px-5">
             <NavBar />
-            <div className="max-w-[1200px] mx-auto flex-1 flex">
+            <div className="max-w-[1200px] mx-auto flex-1">
               {children}
             </div>
           </div>

@@ -1,12 +1,14 @@
-import { ExperienceSection } from "./sections/ExperienceSection";
+import { AnimatedText } from "../components/AnimatedText";
 import { InformationSection } from "./sections/InformationSection";
+import PrincipalProjects from "./sections/PrincipalProjectsSection";
 
 const About = () => {
   return (
-    <div className="md:mx-10">
+    <>
+      <AnimatedText text="Innovación a Través del Desarrollo" />
       <InformationSection />
-      <ExperienceSection />
-    </div>
+      <PrincipalProjects />
+    </>
   );
 };
 

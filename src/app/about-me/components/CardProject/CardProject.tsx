@@ -1,3 +1,4 @@
+'use client'
 import GeneralLink from '@/app/components/GeneralButton/GeneralLink';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,7 +12,14 @@ export interface Props {
 const CardProject: React.FC<Props> = ({ }) => {
 	return (
 		<div className='w-full sm:max-w-[350px] min-h-[400px] rounded-md overflow-hidden shadow-md flex flex-col'>
-			<Image loading='lazy' src={'https://cdn.wedevs.com/uploads/2021/04/Best-project-management-software-for-web-designers.png'} width={350} height={200} alt='project'/>
+			<Image
+				loading='lazy'
+				src={'https://cdn.wedevs.com/uploads/2021/04/Best-project-management-software-for-web-designers.png'}
+				width={350}
+				height={200}
+				className='w-full h-full'
+				alt='project'
+			/>
 
 			<div className='flex-1 m-4 gap-2 flex-col flex'>
 				{/* title */}

@@ -15,6 +15,9 @@ export default {
       fontFamily: {
         Sora: ["sora", "sans", "sans-serif"],
       },
+      borderColor: {
+        border: '229,231,235'
+      }
     },
   },
   plugins: [],

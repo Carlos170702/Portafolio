@@ -8,7 +8,7 @@ export interface Props {
 
 const SectionTitle: React.FC<Props> = ({ sectionTitle }) => {
 	return (
-		<Slide direction='right'>
+		<Slide direction='right' className='my-5' triggerOnce>
 			<h2 className='text-4xl font-bold'>{sectionTitle}</h2>
 		</Slide>
 	);

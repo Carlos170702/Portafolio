@@ -4,14 +4,16 @@ import React from "react";
 const InformationAboutMe = () => {
   return (
     <div>
-      <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+      <h2 className="mb-4 text-xl font-bold uppercase text-dark/75">
         Sobre mi
       </h2>
-      {MESSAGE_ABOUT_ME.map((message, index) => (
-        <p key={index} className="font-medium mb-4 text-sm text-dark">
-          {message}
-        </p>
-      ))}
+      <div className="max-w-[600px]">
+        {MESSAGE_ABOUT_ME.map((message, index) => (
+          <p key={index} className="font-normal mb-4 text-base text-dark ">
+            {message}
+          </p>
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,27 +1,20 @@
-"use client";
-import { useState } from "react";
-import { Fade } from "react-awesome-reveal";
-import { InView } from "react-intersection-observer";
+import { SectionTitle } from "@/app/components/SectionTitle";
+import { experiences } from "../data";
+import { CardExperience } from "../components/CardExperience";
 
 export const ExperienceSection = () => {
-  const [inView, setInView] = useState(false);
-
   return (
-    <InView
-      as="div"
-      threshold={0.4}
-      className="py-[100px]"
-      onChange={(inView) => {
-        setInView(inView);
-      }}
-    >
-      {inView && (
-        <Fade fraction>
-          <div
-            className={`${inView ? "bg-red-400" : "bg-blue-600"} py-44`}
-          >{`Header inside viewport.`}</div>
-        </Fade>
-      )}
-    </InView>
+    <section className="w-full">
+      <SectionTitle sectionTitle="Experiencia" />
+      <div className="relative">
+        <div className="absolute left-0 md:left-1/2 h-full w-1 transform -translate-x-1/2 bg-gray-200" />
+
+        {experiences.map((experience) => (
+          <CardExperience key={experience.id} experience={experience} />
+        ))}
+      </div>
+    </section>
   );
 };
+
+export default ExperienceSection;

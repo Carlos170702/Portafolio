@@ -1,7 +1,7 @@
 import { SectionTitle } from '@/app/components/SectionTitle'
 import { CardContainer } from '../components/CardContainer'
 
-const PrincipalProjects = () => {
+const PrincipalProjectsSection = () => {
     return (
         <section className='space-y-5'>
             <SectionTitle sectionTitle='Proyectos' />
@@ -10,4 +10,4 @@ const PrincipalProjects = () => {
     )
 }
 
-export default PrincipalProjects
+export default PrincipalProjectsSection

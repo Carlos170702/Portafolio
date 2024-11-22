@@ -1,5 +1,4 @@
 'use client'
-import { Slide } from "react-awesome-reveal";
 import { FaGitAlt, FaPython, FaReact } from "react-icons/fa";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
 import { PiFigmaLogoBold } from "react-icons/pi";
@@ -9,6 +8,7 @@ import { TbBrandRedux } from "react-icons/tb";
 import { TiHtml5 } from "react-icons/ti";
 import { SkillModel } from "../../models";
 import { SkillItem } from "../SkillItem";
+import { SliceIn } from "@/app/components/SliceIn";
 
 const skills: SkillModel[] = [
   {
@@ -90,18 +90,16 @@ const skills: SkillModel[] = [
 
 const Skills = () => {
   return (
-    <div>
-      <Slide direction="up" triggerOnce>
-        <h2 className="text-lg font-bold uppercase text-dark/75">
-          Habilidades técnicas
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
-          {skills.map((skill) => (
-            <SkillItem key={skill.id} skill={skill} />
-          ))}
-        </div>
-      </Slide >
-    </div>
+    <SliceIn>
+      <h2 className="text-lg font-bold uppercase text-dark/75">
+        Habilidades técnicas
+      </h2>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+        {skills.map((skill) => (
+          <SkillItem key={skill.id} skill={skill} />
+        ))}
+      </div>
+    </SliceIn >
   );
 };
 

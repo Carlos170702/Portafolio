@@ -8,7 +8,7 @@ export interface Props {
 
 const SectionTitle: React.FC<Props> = ({ sectionTitle }) => {
 	return (
-		<SliceIn>
+		<SliceIn direction='right'>
 			<h2 className='text-4xl font-bold'>{sectionTitle}</h2>
 		</SliceIn>
 	);

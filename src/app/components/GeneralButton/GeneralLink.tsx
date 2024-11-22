@@ -1,4 +1,5 @@
 'use client'
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import React from 'react';
 
@@ -13,8 +14,12 @@ const GeneralLink: React.FC<Props> = ({ icon, title, className, href }) => {
 	const CopyMailClipboard = () => {
 		navigator.clipboard.writeText("carloscruz1dev@gmail.com");
 	};
+	const CustomLink = motion(Link);
+
 	return (
-		<Link
+		<CustomLink
+			whileHover={{ scale: 1.05 }}
+			whileTap={{ scale: 0.95 }}
 			onClick={() => !href ? CopyMailClipboard() : () => { }}
 			href={href ? href : ''}
 			target={href && "_blank"}
@@ -23,7 +28,7 @@ const GeneralLink: React.FC<Props> = ({ icon, title, className, href }) => {
 		>
 			<span>{title}</span>
 			{icon}
-		</Link>
+		</CustomLink>
 	);
 };
 

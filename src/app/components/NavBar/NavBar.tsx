@@ -1,17 +1,7 @@
 import { NavigationLinkEnum } from "@/assets/enum";
 import { Logo } from "../Logo";
 import { CustomLink } from "./CustomLink";
-
-// const social_links = [
-//   {
-//     link: "https://github.com/Carlos170702",
-//     icon: <GithubIcon />,
-//   },
-//   {
-//     link: "https://www.linkedin.com/in/carlos-cruz-a768a1244/",
-//     icon: <LinkedInIcon />,
-//   },
-// ];
+import { HeightNavBar } from "@/assets";
 
 const navigation_links = [
   {
@@ -30,7 +20,7 @@ const navigation_links = [
 
 const NavBar = ({ }) => {
   return (
-    <header className="font-medium items-center justify-between py-5 hidden md:flex">
+    <header className={`font-medium items-center justify-between py-5 hidden md:flex h-[${HeightNavBar}]`}>
       <Logo />
       <nav className="flex gap-5 ">
         {navigation_links.map((item, index) => (

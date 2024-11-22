@@ -29,7 +29,9 @@ const socialLinks = [
 
 export const InformationSection = () => {
   return (
-    <section className="flex flex-col gap-8 md:flex-row items-center justify-center">
+    <section
+      className={`flex flex-col gap-8 md:flex-row items-center justify-center h-[calc(100vh-70px)]`}
+    >
       <div className="max-w-[300px] rounded-2xl border-2 border-solid border-black p-6  bg-light gap-5 shadow-sm shadow-black">
         <Image
           src={"/images/profile.webp"}

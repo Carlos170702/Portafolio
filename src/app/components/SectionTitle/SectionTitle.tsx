@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import { Slide } from 'react-awesome-reveal';
+import { SliceIn } from '../SliceIn';
 
 export interface Props {
 	sectionTitle: string;
@@ -8,9 +8,9 @@ export interface Props {
 
 const SectionTitle: React.FC<Props> = ({ sectionTitle }) => {
 	return (
-		<Slide direction='right' className='my-5' triggerOnce>
+		<SliceIn>
 			<h2 className='text-4xl font-bold'>{sectionTitle}</h2>
-		</Slide>
+		</SliceIn>
 	);
 };
 

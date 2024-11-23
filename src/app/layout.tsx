@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { Sora } from "next/font/google";
 import { DescriptionInicio } from "@/assets/common/messages";
+import type { Metadata } from "next";
+import { Sora } from "next/font/google";
 import { NavBar } from "./components/NavBar";
+import "./globals.css";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -28,7 +28,7 @@ export default function RootLayout({
         <main className="w-screen min-h-screen">
           <div className="container mx-auto min-h-screen flex flex-col px-5">
             <NavBar />
-            <div className="max-w-[1200px] mx-auto flex-1">
+            <div className="max-w-[1200px] mx-auto">
               {children}
             </div>
           </div>

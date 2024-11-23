@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { InformationAboutMe } from "../components/InformationAboutMe";
 import { SliceIn } from "@/app/components/SliceIn";
+import { FadeIn } from "@/app/components/FadeIn";
 
 const socialLinks = [
   {
@@ -30,36 +31,34 @@ const socialLinks = [
 
 export const InformationSection = () => {
   return (
-    <SliceIn>
-      <section
-        className={`flex flex-col gap-8 md:flex-row items-center justify-center h-[calc(100vh-70px)]`}
-      >
-        <div className="max-w-[300px] rounded-2xl border-2 border-solid border-black p-6  bg-light gap-5 shadow-sm shadow-black">
-          <Image
-            src={"/images/profile.webp"}
-            alt="Imagen animada de mi"
-            className="w-full"
-            width={200}
-            height={200}
-            priority
-          />
-        </div>
+    <section
+      className={`flex flex-col gap-8 md:flex-row items-center justify-center h-[calc(100vh-70px)]`}
+    >
+      <FadeIn className="max-w-[300px] rounded-2xl border-2 border-solid border-black p-6  bg-light gap-5 shadow-sm shadow-black">
+        <Image
+          src={"/images/profile.webp"}
+          alt="Imagen animada de mi"
+          className="w-full"
+          width={200}
+          height={200}
+          priority
+        />
+      </FadeIn>
 
-        <div>
-          <InformationAboutMe />
-          <div className="flex gap-2">
-            {socialLinks.map((item) => (
-              <GeneralLink
-                key={item.id}
-                href={item.href}
-                target={item.target}
-                icon={item.icon}
-                title={item.title}
-              />
-            ))}
-          </div>
+      <SliceIn>
+        <InformationAboutMe />
+        <div className="flex gap-2">
+          {socialLinks.map((item) => (
+            <GeneralLink
+              key={item.id}
+              href={item.href}
+              target={item.target}
+              icon={item.icon}
+              title={item.title}
+            />
+          ))}
         </div>
-      </section>
-    </SliceIn>
+      </SliceIn>
+    </section>
   );
 };

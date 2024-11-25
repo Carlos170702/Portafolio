@@ -8,7 +8,7 @@ export interface Props {
 const CardExperience: React.FC<Props> = ({ experience }) => {
 	return (
 
-		<div className="mb-8 flex flex-col md:flex-row items-center">
+		<div className="mb-2 flex flex-col md:flex-row items-center">
 			<div className="flex-1 w-full md:w-1/2 md:pr-8 md:text-right order-2 md:order-1">
 				{experience.id % 2 === 0 && (
 					<CardContextExperience {...experience} />

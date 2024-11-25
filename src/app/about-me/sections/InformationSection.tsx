@@ -1,10 +1,10 @@
-import GeneralLink from "@/app/components/GeneralButton/GeneralLink";
+import GeneralLink from "@/components/GeneralButton/GeneralLink";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { InformationAboutMe } from "../components/InformationAboutMe";
-import { SliceIn } from "@/app/components/SliceIn";
-import { FadeIn } from "@/app/components/FadeIn";
+import { SliceIn } from "@/components/SliceIn";
+import { FadeIn } from "@/components/FadeIn";
 
 const socialLinks = [
   {
@@ -41,18 +41,18 @@ export const InformationSection = () => {
           className="w-full"
           width={200}
           height={200}
-          priority
+          placeholder="blur"
+          blurDataURL="/images/profile.webp"
         />
       </FadeIn>
 
-      <SliceIn>
+      <SliceIn direction="right">
         <InformationAboutMe />
         <div className="flex gap-2">
           {socialLinks.map((item) => (
             <GeneralLink
               key={item.id}
               href={item.href}
-              target={item.target}
               icon={item.icon}
               title={item.title}
             />

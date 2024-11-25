@@ -2,8 +2,9 @@ import { NavigationLinkEnum } from "@/assets/enum";
 import { Logo } from "../Logo";
 import { CustomLink } from "./CustomLink";
 import { HeightNavBar } from "@/assets";
+import { NavigationLinks } from "@/models";
 
-const navigation_links = [
+const navigation_links: NavigationLinks[] = [
   {
     link: NavigationLinkEnum.HOME,
     title: "Inicio",

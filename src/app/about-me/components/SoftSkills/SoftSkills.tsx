@@ -1,3 +1,4 @@
+import { FadeIn } from "@/components/FadeIn";
 import { softSkillModel } from "../../models";
 import { SoftSkillItem } from "../SoftSkillItem";
 
@@ -17,7 +18,7 @@ const softSkills: softSkillModel[] = [
 
 const SoftSkills = ({ }) => {
   return (
-    <div>
+    <FadeIn className="shadow-xl p-4">
       <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
         Habilidades
       </h2>
@@ -26,7 +27,7 @@ const SoftSkills = ({ }) => {
           <SoftSkillItem key={skill.id} softSkill={skill} />
         ))}
       </div>
-    </div>
+    </FadeIn>
   );
 };
 

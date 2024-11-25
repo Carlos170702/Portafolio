@@ -13,7 +13,7 @@ const ObserverEntryElement: React.FC<Props> = ({ children }) => {
 
 
 	return (
-		<div ref={ref} className='h-[300px]'>
+		<div ref={ref} className='min-h-[300px]'>
 			{inView && (children)}
 		</div>
 	);

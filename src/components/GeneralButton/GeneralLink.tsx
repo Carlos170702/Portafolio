@@ -14,7 +14,7 @@ const GeneralLink: React.FC<Props> = ({ icon, title, className, href }) => {
 	const CopyMailClipboard = () => {
 		navigator.clipboard.writeText("carloscruz1dev@gmail.com");
 	};
-	const CustomLink = motion(Link);
+	const CustomLink = motion.create(Link);
 
 	return (
 		<CustomLink

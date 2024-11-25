@@ -7,6 +7,5 @@ export const MESSAGE_DESCRIPTION =
   "Soy un apasionado desarrollador de software con experiencia en la creación de soluciones innovadoras. Especializado en desarrollo web me esfuerzo por construir aplicaciones que marquen la diferencia.";
 
 // AboutMe.tsx
-export const MESSAGE_ABOUT_ME = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis sollicitudin dolor, nec efficitur nibh scelerisque et. Ut malesuada dui et ipsum mattis, mollis tempus ipsum maximus. In hac habitasse platea dictumst. Nam quis nisi sit amet est molestie porttitor et at enim. Suspendisse faucibus quis dui quis vestibulum. Nunc.",
-];
+export const MESSAGE_ABOUT_ME =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis sollicitudin dolor, nec efficitur nibh scelerisque et. Ut malesuada dui et ipsum mattis, mollis tempus ipsum maximus. In hac habitasse platea dictumst. Nam quis nisi sit amet est molestie porttitor et at enim. Suspendisse faucibus quis dui quis vestibulum. Nunc.";

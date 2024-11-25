@@ -1,7 +1,7 @@
 import { DescriptionInicio } from "@/assets/common/messages";
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
-import { NavBar } from "./components/NavBar";
+import { NavBar } from "@/components/NavBar";
 import "./globals.css";
 
 const sora = Sora({
@@ -13,6 +13,7 @@ const sora = Sora({
 export const metadata: Metadata = {
   title: "Portafolio-Carlos Daniel",
   description: DescriptionInicio,
+  icons: { icon: "/public/images/logo.webp",  },
 };
 
 export default function RootLayout({

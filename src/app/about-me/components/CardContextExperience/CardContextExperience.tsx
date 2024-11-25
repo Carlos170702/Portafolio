@@ -1,5 +1,5 @@
-import { ObserverEntryElement } from '@/app/components/ObserverEntryElement';
-import { SliceIn } from '@/app/components/SliceIn';
+import { ObserverEntryElement } from '@/components/ObserverEntryElement';
+import { SliceIn } from '@/components/SliceIn';
 import React from 'react';
 
 export interface Props {

@@ -1,7 +1,7 @@
 import { motion, Variants } from "framer-motion";
 import * as React from "react";
 import { CustomLink } from "../../NavBar/CustomLink";
-import { NavigationLinks } from "@/app/models";
+import { NavigationLinks } from "@/models";
 
 const variants: Variants = {
   open: {

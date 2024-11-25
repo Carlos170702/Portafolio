@@ -17,6 +17,9 @@ export default {
       },
       borderColor: {
         border: '229,231,235'
+      },
+      boxShadow: {
+        skill: '10px 10px 50px rgba(0, 0, 0, 0.1)',
       }
     },
   },

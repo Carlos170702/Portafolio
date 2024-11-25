@@ -1,9 +1,10 @@
 {
     "cSpell.words": [
         "geist",
+        "Linkedin",
         "mont"
     ],
     "exportall.config.folderListener": [
-        "/src/app/components/Sidebar/Navigation"
+        "/src/components/Sidebar/Navigation"
     ]
 }

@@ -1,12 +1,16 @@
-import { ExperienceSection } from "./sections/ExperienceSection";
+import ExperienceSection from "./sections/ExperienceSection";
 import { InformationSection } from "./sections/InformationSection";
+import PrincipalProjects from "./sections/PrincipalProjectsSection";
+import SkillSection from "./sections/SkillSection";
 
 const About = () => {
   return (
-    <div className="md:mx-10">
+    <>
       <InformationSection />
+      <PrincipalProjects />
       <ExperienceSection />
-    </div>
+      <SkillSection />
+    </>
   );
 };
 

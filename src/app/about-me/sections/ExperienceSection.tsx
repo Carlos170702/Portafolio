@@ -8,7 +8,6 @@ export const ExperienceSection = () => {
       <SectionTitle sectionTitle="Experiencia" />
       <div className="relative">
         <div className="absolute left-0 md:left-1/2 h-full w-1 transform -translate-x-1/2 bg-gray-200" />
-        <div className="absolute left-0 md:left-1/2 h-full w-1 transform -translate-x-1/2 bg-gray-200" />
         {experiences.map((experience) => (
           <CardExperience key={experience.id} experience={experience} />
         ))}

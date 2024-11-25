@@ -7,9 +7,9 @@ const About = () => {
   return (
     <>
       <InformationSection />
-      <SkillSection />
-      <ExperienceSection />
       <PrincipalProjects />
+      <ExperienceSection />
+      <SkillSection />
     </>
   );
 };

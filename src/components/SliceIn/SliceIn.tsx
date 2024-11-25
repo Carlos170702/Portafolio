@@ -5,9 +5,10 @@ import React from 'react';
 export interface SliceInProps {
 	children: React.ReactNode
 	direction: 'right' | 'left'
+	className?: string
 }
 
-const SliceIn: React.FC<SliceInProps> = ({ children, direction = 'right' }) => {
+const SliceIn: React.FC<SliceInProps> = ({ children, direction = 'right', className = '' }) => {
 
 	const initial = { x: direction == 'right' ? 700 : -700, opacity: 0 }
 	const animate = { x: 0, opacity: 1, transition: { duration: 1 } }
@@ -20,7 +21,7 @@ const SliceIn: React.FC<SliceInProps> = ({ children, direction = 'right' }) => {
 	return (
 		<motion.div
 			variants={VariantAnimation}
-			className='my-5'
+			className={`my-5 ${className}`}
 			initial={'initial'}
 			animate={'animate'}
 		>

@@ -10,13 +10,11 @@ const SkillSection = () => {
             <ObserverEntryElement>
                 <SectionTitle sectionTitle="Habilidades" />
 
-                <FadeIn>
-                    <div className="grid md:grid-cols-2 gap-5">
-                        <SkillsContainer title="FrontEnd" skills={skills.frontend} />
-                        <div className="grid gap-5">
-                            <SkillsContainer title="BackEnd" skills={skills.backend} />
-                            <SkillsContainer title="Herramientas" skills={skills.tools} />
-                        </div>
+                <FadeIn className="grid md:grid-cols-2 gap-5">
+                    <SkillsContainer title="FrontEnd" skills={skills.frontend} />
+                    <div className="grid gap-5">
+                        <SkillsContainer title="BackEnd" skills={skills.backend} />
+                        <SkillsContainer title="Herramientas" skills={skills.tools} />
                     </div>
                 </FadeIn>
             </ObserverEntryElement>

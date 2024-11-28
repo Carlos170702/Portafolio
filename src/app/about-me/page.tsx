@@ -1,3 +1,4 @@
+import ContactSection from "./sections/ContactSection";
 import ExperienceSection from "./sections/ExperienceSection";
 import { InformationSection } from "./sections/InformationSection";
 import PrincipalProjects from "./sections/PrincipalProjectsSection";
@@ -10,6 +11,7 @@ const About = () => {
       <PrincipalProjects />
       <ExperienceSection />
       <SkillSection />
+      <ContactSection />
     </>
   );
 };

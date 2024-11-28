@@ -13,7 +13,7 @@ const sora = Sora({
 export const metadata: Metadata = {
   title: "Portafolio-Carlos Daniel",
   description: DescriptionInicio,
-  icons: { icon: "/public/images/logo.webp",  },
+  icons: { icon: "/images/logo.webp",  },
 };
 
 export default function RootLayout({

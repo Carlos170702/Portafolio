@@ -1,0 +1,1 @@
+export { Message3DModel } from './MessageModel3D';

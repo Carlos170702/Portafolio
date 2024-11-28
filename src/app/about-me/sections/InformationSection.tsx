@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { InformationAboutMe } from "../components/InformationAboutMe";
 import { SliceIn } from "@/components/SliceIn";
 import { FadeIn } from "@/components/FadeIn";
+import { PiReadCvLogoFill } from "react-icons/pi";
 
 const socialLinks = [
   {
@@ -16,17 +17,18 @@ const socialLinks = [
   },
   {
     id: 2,
-    target: "_blank",
-    icon: <MdEmail size={20} />,
-    title: "Correo",
-  },
-  {
-    id: 3,
     href: "https://www.linkedin.com/in/carlos-cruz-a768a1244/",
     target: "_blank",
     icon: <FaLinkedin size={20} color="#0a66c2" />,
     title: "LinkedIn",
   },
+  {
+    id: 3,
+    target: "_blank",
+    icon: <MdEmail size={20} />,
+    title: "Correo",
+  },
+
 ];
 
 export const InformationSection = () => {
@@ -39,14 +41,14 @@ export const InformationSection = () => {
           src={"/images/profile.webp"}
           alt="Imagen animada de mi"
           className="w-full"
-          width={200}
+          width={300}
           height={200}
           placeholder="blur"
           blurDataURL="/images/profile.webp"
         />
       </FadeIn>
 
-      <SliceIn direction="right">
+      <SliceIn direction="right" className="space-y-5">
         <InformationAboutMe />
         <div className="flex gap-2">
           {socialLinks.map((item) => (
@@ -57,6 +59,8 @@ export const InformationSection = () => {
               title={item.title}
             />
           ))}
+          <GeneralLink title={"CV"} icon={<PiReadCvLogoFill size={22} />} href="/CarlosDanielCruzPerez.pdf"/>
+
         </div>
       </SliceIn>
     </section>

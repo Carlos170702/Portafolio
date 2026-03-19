@@ -6,7 +6,7 @@ import { FadeIn } from "@/components/FadeIn"
 
 const SkillSection = () => {
     return (
-        <section className="w-full grid">
+        <section id="skills" className="w-full grid scroll-mt-20">
             <ObserverEntryElement>
                 <SectionTitle sectionTitle="Habilidades" />
 

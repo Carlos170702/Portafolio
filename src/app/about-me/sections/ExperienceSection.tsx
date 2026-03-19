@@ -4,7 +4,7 @@ import { experiences } from "../data";
 
 export const ExperienceSection = () => {
   return (
-    <section className="w-full">
+    <section id="experience" className="w-full scroll-mt-20">
       <SectionTitle sectionTitle="Experiencia" />
       <div className="relative">
         <div className="absolute left-0 md:left-1/2 h-full w-1 transform -translate-x-1/2 bg-gray-200" />

@@ -1,14 +1,14 @@
 import { DescriptionInicio } from "@/assets/common/messages";
 import type { Metadata } from "next";
-import { Sora } from "next/font/google";
-import { NavBar } from "@/components/NavBar";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import ClientRootShell from "./ClientRootShell";
 
-const sora = Sora({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  variable: "--font-sora",
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
-})
+  variable: "--font-space-grotesk",
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Portafolio-Carlos Daniel",
@@ -24,14 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sora.className} antialiased font-sora overflow-x-hidden`}
+        className={`${spaceGrotesk.className} antialiased overflow-x-hidden`}
       >
         <main className="w-screen min-h-screen">
           <div className="container mx-auto min-h-screen flex flex-col px-5">
-            <NavBar />
-            <div className="max-w-[1200px] mx-auto">
-              {children}
-            </div>
+            <ClientRootShell>{children}</ClientRootShell>
           </div>
         </main>
       </body>

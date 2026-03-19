@@ -18,7 +18,7 @@ const softSkills: softSkillModel[] = [
 
 const SoftSkills = ({ }) => {
   return (
-    <FadeIn className="shadow-xl p-4">
+    <FadeIn className="shadow-xl p-4 bg-light rounded-2xl border border-dark/10">
       <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
         Habilidades
       </h2>

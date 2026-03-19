@@ -11,6 +11,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        dark: "rgb(var(--color-ink))",
+        light: "rgb(var(--color-paper))",
+        bamboo: {
+          50: "rgb(var(--color-bamboo-50))",
+          100: "rgb(var(--color-bamboo-100))",
+          500: "rgb(var(--color-bamboo-500))",
+          600: "rgb(var(--color-bamboo-600))",
+          700: "rgb(var(--color-bamboo-700))",
+        },
       },
       fontFamily: {
         Sora: ["sora", "sans", "sans-serif"],

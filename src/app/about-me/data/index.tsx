@@ -3,8 +3,7 @@ import { ExperienceModel, ProjectModel, SkillModel } from "../models";
 import { FaGitAlt, FaPython, FaReact } from "react-icons/fa6";
 import { PiFigmaLogoBold } from "react-icons/pi";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiTypescript, SiMui, SiFramer, SiStyledcomponents, SiDjango, SiMysql } from "react-icons/si";
-import { TbBrandRedux } from "react-icons/tb";
+import { SiTypescript, SiMui, SiFramer, SiDjango, SiMysql, SiNodedotjs, SiExpress, SiSupabase } from "react-icons/si";
 import { TiHtml5 } from "react-icons/ti";
 
 export const experiences: ExperienceModel[] = [
@@ -120,16 +119,6 @@ export const skills: SkillModel = {
       skill: "Framer Motion",
       icon: <SiFramer color="rgb(66, 156, 255)" size={25} />,
     },
-    {
-      id: 10,
-      skill: "Redux",
-      icon: <TbBrandRedux color="rgb(118, 74, 188)" size={25} />,
-    },
-    {
-      id: 11,
-      skill: "Styled-components",
-      icon: <SiStyledcomponents color="rgb(219, 112, 147)" size={25} />,
-    },
   ],
   backend: [
     {
@@ -146,6 +135,21 @@ export const skills: SkillModel = {
       id: 3,
       skill: "SQL",
       icon: <SiMysql color="rgb(0, 123, 255)" size={25} />,
+    },
+    {
+      id: 4,
+      skill: "Node.js",
+      icon: <SiNodedotjs color="rgb(83, 158, 67)" size={25} />,
+    },
+    {
+      id: 5,
+      skill: "Express",
+      icon: <SiExpress color="rgb(17, 17, 17)" size={25} />,
+    },
+    {
+      id: 6,
+      skill: "Supabase",
+      icon: <SiSupabase color="rgb(62, 207, 142)" size={25} />,
     },
   ],
   tools: [

@@ -1,4 +1,3 @@
-import { NavigationLinkEnum } from "@/assets/enum";
 import { Logo } from "../Logo";
 import { CustomLink } from "./CustomLink";
 import { HeightNavBar } from "@/assets";
@@ -6,22 +5,30 @@ import { NavigationLinks } from "@/models";
 
 const navigation_links: NavigationLinks[] = [
   {
-    link: NavigationLinkEnum.HOME,
-    title: "Inicio",
-  },
-  {
-    link: NavigationLinkEnum.ABOUT_ME,
+    link: "/about-me#about",
     title: "Acerca de mi",
   },
   {
-    link: NavigationLinkEnum.PROJECTS,
+    link: "/about-me#projects",
     title: "Proyectos",
+  },
+  {
+    link: "/about-me#experience",
+    title: "Experiencia",
+  },
+  {
+    link: "/about-me#skills",
+    title: "Habilidades",
+  },
+  {
+    link: "/about-me#contact",
+    title: "Contacto",
   },
 ];
 
 const NavBar = ({ }) => {
   return (
-    <header className={`font-medium items-center justify-between py-5 hidden md:flex h-[${HeightNavBar}]`}>
+    <header className={`font-medium items-center justify-between py-5 hidden md:flex h-[${HeightNavBar}] sticky top-0 z-40 bg-light/80 backdrop-blur-md`}>
       <Logo />
       <nav className="flex gap-5 ">
         {navigation_links.map((item, index) => (

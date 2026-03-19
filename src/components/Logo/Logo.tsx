@@ -7,9 +7,9 @@ const Logo = () => {
     <div className="flex items-center justify-between">
       <Link
         href={NavigationLinkEnum.HOME}
-        className="bg-dark text-light flex items-center justify-center rounded-full text-2xl font-bold"
+        className="text-dark flex items-center justify-center rounded-full text-3xl font-bold h-[70px] overflow-hidden"
       >
-        <Image alt="Logo" src='/images/logo2.webp' layout="" width={80} height={80} />
+        <Image alt="Logo" src='/images/logo.webp' layout="" width={160} height={70} className="object-contain" />
       </Link>
     </div>
   );

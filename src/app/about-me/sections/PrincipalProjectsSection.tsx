@@ -3,7 +3,7 @@ import { CardContainer } from '../components/CardContainer'
 
 const PrincipalProjectsSection = () => {
     return (
-        <section className='space-y-5'>
+        <section id="projects" className='space-y-5 scroll-mt-20'>
             <SectionTitle sectionTitle='Proyectos' />
             <CardContainer />
         </section>

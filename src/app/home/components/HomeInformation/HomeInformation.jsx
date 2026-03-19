@@ -9,18 +9,18 @@ const HomeInformation = ({}) => {
   return (
     <div className="max-w-[800px] flex flex-col">
       <AnimatedText
-        text="¡Hola! Soy Carlos Daniel, Desarrollador de Web."
+        text="¡Hola! Soy Carlos Daniel, Desarrollador Web."
         className="text-[30px] text-left lg:text-5xl"
       />
-      <p className="my-4 text-base font-medium text-gray-600 ">
+      <p className="my-4 text-base font-medium text-dark/70">
         {MESSAGE_DESCRIPTION}
       </p>
 
       <div className="flex items-center self-start mt-2 gap-5 justify-center">
         <Link
           href={NavigationLinkEnum.ABOUT_ME}
-          className="bg-dark text-light px-6 py-2.5 rounded-md font-semibold text-lg border border-solid border-transparent shadow-md flex gap-2 items-center 
-	  hover:bg-light hover:text-dark hover:border-dark transition-all duration-300 ease-in-out"
+          className="bg-bamboo-600 text-light px-6 py-2.5 rounded-md font-semibold text-lg border border-solid border-transparent shadow-md flex gap-2 items-center 
+	  hover:bg-bamboo-700 transition-all duration-300 ease-in-out"
         >
           Conóceme
           <FaArrowRight size={20} />
@@ -28,13 +28,13 @@ const HomeInformation = ({}) => {
         <Link
           href="/CarlosDanielCruzPerez.pdf"
           target="_blank"
-          className="text-white px-6 py-2.5 rounded-md font-semibold text-lg border border-solid border-transparent shadow-md flex gap-2 items-center 
-          transition-all duration-300 ease-in-out bg-black"
+          className="group bg-light text-dark px-6 py-2.5 rounded-md font-semibold text-lg border border-solid border-dark/15 shadow-md flex gap-2 items-center 
+          hover:border-bamboo-600 hover:text-bamboo-700 transition-all duration-300 ease-in-out"
           download
         >
           <span>CV</span> <PiReadCvLogoFill size={22} />
           <span
-            className={`absolute h-[2px] bg-black w-0 -bottom-0.5 left-0 group-hover:w-full transition-[width] ease duration-300`}
+            className="absolute h-[2px] bg-bamboo-600 w-0 -bottom-0.5 left-0 group-hover:w-full transition-[width] ease duration-300"
           >
             &nbsp;
           </span>
